@@ -156,3 +156,14 @@ nav ul li a {
         display: none;
     }
 }
+
+/* FOOTER */
+.footer-img {
+    width: 2.5rem;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.footer-img:hover {
+    filter: none;
+}
