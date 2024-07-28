@@ -111,12 +111,12 @@ nav ul li a {
 
 @media (max-width: 858px) {
     .names {
-        top: 10%;
+        top: 9%;
     }
 
     #profile-img {
         width: 8rem;
-        top: 37%;
+        top: 30%;
     }
 }
 
@@ -130,7 +130,7 @@ nav ul li a {
     padding-left: 0.5rem;
     border-radius: 999px;
     border: none;
-    background-color: white;
+    background-color: black;
     text-align: center;
     text-decoration: none;
     color: #fff;
@@ -157,7 +157,17 @@ nav ul li a {
     }
 }
 
+/* HABILIDADES */
+#habilidades {
+    background-color: black;
+}
+
+
 /* FOOTER */
+#footer {
+    background-color: black;
+}
+
 .footer-img {
     width: 2.5rem;
     filter: grayscale(100%);
