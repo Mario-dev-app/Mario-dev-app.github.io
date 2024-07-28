@@ -1,0 +1,158 @@
+/* NAVBAR SECTION */
+
+nav ul li {
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+/* li a.active, li a:hover {
+    background: red;
+} */
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #44ff00,
+        0 0 15px #44ff00,
+        0 0 20px #44ff00,
+        0 0 25px #44ff00,
+        0 0 30px #44ff00;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.check-btn {
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+#check-nav {
+    display: none;
+}
+
+@media (max-width: 858px) {
+    .check-btn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        top: 3.5rem;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1000;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 2rem 0;
+    }
+
+    /* #check-nav:checked~ul {
+        left: 0;
+    } */
+}
+
+
+/* BACKGROUND IMAGE WITH BLUR */
+.blur-background {
+    background-image: url('../assets/img-code.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(10px);
+    mask-image: linear-gradient(transparent,
+            black 90%);
+    height: 23rem;
+}
+
+
+/* NOMBRE Y FOTO */
+.names {
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    width: 80%;
+    position: absolute;
+    top: 10%;
+    padding: 1rem;
+}
+
+#profile-img {
+    width: 10rem;
+    position: absolute;
+    top: 25%;
+    border: 2px solid white;
+}
+
+@media(max-width: 1500px) {
+    .names {
+        top: 15%;
+    }
+
+    #profile-img {
+        top: 40%;
+    }
+}
+
+@media (max-width: 858px) {
+    .names {
+        top: 10%;
+    }
+
+    #profile-img {
+        width: 8rem;
+        top: 37%;
+    }
+}
+
+/* MI PERFIL */
+.text-justify {
+    text-align: justify;
+}
+
+.download-btn {
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+    border-radius: 999px;
+    border: none;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #44ff00,
+        0 0 15px #44ff00,
+        0 0 20px #44ff00,
+        0 0 25px #44ff00,
+        0 0 30px #44ff00;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.download-btn img {
+    padding: 0.5rem;
+    border-right: none
+}
+
+@media(max-width: 858px) {
+    #programming-code-img {
+        display: none;
+    }
+}
